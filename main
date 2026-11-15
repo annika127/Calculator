@@ -1,10 +1,29 @@
 import java.util.Scanner;
-//vscode.git.Git
 public class main {
     public static void main(String[] args) throws Exception {
        Scanner scn = new Scanner(System.in);
         System.out.println("Enter first number:");
 double fNum = Double.parseDouble(scn.nextLine());
         System.out.println("Enter second number:");
+double sNum = Double.parseDouble(scn.nextLine());
+        System.out.println("Enter operation (+, -, *, /):");
+        String operation = scn.nextLine();
+
+ if (operation.equals("+")) {
+            System.out.println(fNum+sNum);
+     
+        } else if (operation.equals("-")) {
+            System.out.println(fNum-sNum);
+      
+        } else if (operation.equals("*")) {
+            System.out.println(fNum*sNum);
+      
+        } else if (operation.equals("/")) {
+            System.out.println(fNum/sNum);
+      
+        }
+        else{ System.out.println("Invalid operation");
+        }
+    
       }
     }
